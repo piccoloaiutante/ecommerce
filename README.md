@@ -10,6 +10,7 @@ This project uses the following tools:
 - [python](https://www.python.org/) as runtime
 - [virtualenv](https://docs.python.org/3/library/venv.html) way to run your python environment
 - [django](https://www.djangoproject.com) as web framework
+- [postgres] (https://www.postgresql.org) as database for the application
 - [psycopg2](https://pypi.org/project/psycopg2/) as library to communicate to Postgres
 - [rest_framework](https://pypi.org/project/djangorestframework/) as framework to build API on top of Django
 
@@ -23,13 +24,15 @@ The project has been tested on Mac only.
 
 3. run `pip install -r requirements.txt` to install the correct dependencies.
 
-4. run `python manage.py migrate` to run migrations on database.
+4. add your postgres env vars in `settings.py`.
 
-5. run `python manage.py createsuperuser` to create a valid user.
+5. run `python manage.py migrate` to run migrations on database.
 
-6. run `python manage.py runserver` to start the development server.
+6. run `python manage.py createsuperuser` to create a valid user.
 
-7. send a POST request to ` http://127.0.0.1:8000/auth/` with the valid user credentials as body, to get a valid token.
+7. run `python manage.py runserver` to start the development server.
+
+8. send a POST request to ` http://127.0.0.1:8000/auth/` with the valid user credentials as body, to get a valid token.
 ```
 {
 	"username": "michelecapra",

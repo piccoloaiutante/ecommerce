@@ -10,7 +10,7 @@ This project uses the following tools:
 - [python](https://www.python.org/) as runtime
 - [virtualenv](https://docs.python.org/3/library/venv.html) way to run your python environment
 - [django](https://www.djangoproject.com) as web framework
-- [postgres] (https://www.postgresql.org) as database for the application
+- [postgres](https://www.postgresql.org) as database for the application
 - [psycopg2](https://pypi.org/project/psycopg2/) as library to communicate to Postgres
 - [rest_framework](https://pypi.org/project/djangorestframework/) as framework to build API on top of Django
 
